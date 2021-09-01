@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Contact Page</title>
+  <!--google fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300" />
+  <link rel="stylesheet" href="css/styles.css">
+  <!--js-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!--contact page bootstrap code-->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="images/contact.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Contact Page
+    </a>
+  </nav>
+
+  <!--input form-->
+
+  <div  class="wrapper" >
+    <form class="contact-form" action="/" method="post">
+      <div class="input-fields"   >
+        <input class="input" name="fullName" type="text" placeholder="Name" required>
+        <input class="input" name="email" type="email" placeholder="Email" required>
+        <input class="input" name="phoneNumber" type="tel" placeholder="Phone Number" required>
+        <input class="input" name="landline" type="tel" placeholder="Landline">
+      </div>
+      <!--dropdown menu-->
+
+      <select id="dropdown">
+        <option value="Book an appointment" name="book">Book an appointment</option>
+        <option value="Schedule a callback" name="call">Schedule a callback</option>
+      </select>
+
+      <!-- submit button-->
+
+      <button id="open"> Submit </button>
+      <div class="modal-container" id="modal_container">
+        <div class=model>
+          <h1> Thank You!</h1>
+          <p> Our team will reach you soon :-)</p>
+          <button id="close"> Close </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- submit button-->
+
+
+  <!--<button id="open"> Submit </button>
+  <div class="modal-container" id="modal_container">
+    <div class=model>
+      <h1> Thank You!</h1>
+      <p> Our team will reach you soon :-)</p>
+      <button id="close"> Close </button>
+    </div>
+  </div>-->
+
+
+
+  <div id="bullets">
+    <h2>✓ High Quality</h2>
+    <h2>✓ Best Sellers</h2>
+    <h2>✓ 100% Return</h2>
+    <h2>✓ Free Deliveries</h2>
+  </div>
+
+
+  <script>
+  const open = document.getElementById('open');
+  const modal_container = document.getElementById('modal_container');
+  const close = document.getElementById('close');
+
+  open.addEventListener('click', () => {
+    modal_container.classList.add('show');
+  });
+
+  close.addEventListener('click', () => {
+    modal_container.classList.remove('show');
+  });
+  </script>
+
+
+
+</body>
+
+</html>

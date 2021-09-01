@@ -1,0 +1,98 @@
+body {
+  background-color: #a698ad;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
+  opacity: 0.5;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');*/
+.wrapper {
+  position: absolute;
+  top: 55%;
+  right: 90px;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 50px 30px 200px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.input-fields .input {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #E6DDC6;
+  padding: 10px;
+  color: #E6DDC6;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: #F9F9F9;
+}
+
+#dropdown {
+  position: absolute;
+  top: 65%;
+  padding: 0.5%;
+}
+
+.modal-container {
+  display: flex;
+  background-color: #01937C;
+  padding: 30px 60px;
+  opacity: 0;
+  border-radius: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 350px;
+  left: 650px;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+
+h1 {
+  color: #fff;
+}
+
+p {
+  color: #ffffff;
+  font-size: 150%;
+}
+
+#close {
+  position: relative;
+  left: 250px;
+  top: 20px
+}
+
+#open {
+  position: absolute;
+  top: 450px;
+  left: 550px;
+}
+
+#bullets {
+  position: absolute;
+  right: 200px;
+  top: 30%;
+  padding: 10px;
+  color: #FFFFFF;
+}
